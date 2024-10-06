@@ -1,0 +1,266 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #003366;
+}
+
+a:hover {
+  color: #0056b3;
+  transition: color 0.3s ease;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #003366;
+  padding: 1em 2em;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+/* Main Styles */
+
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+  flex: 1;
+}
+
+/* Hero Section */
+
+.hero {
+  background: linear-gradient(to bottom right, #003366, #004080);
+  color: #fff;
+  padding: 4em 2em;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #0056b3;
+}
+
+.primary-btn:hover {
+  background-color: #004080;
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background-color: #003366;
+}
+
+.secondary-btn:hover {
+  background-color: #002244;
+  transform: scale(1.05);
+}
+
+/* Form Container */
+
+.form-container {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 2em auto;
+}
+
+.form-container h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form input[type="submit"] {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: white
+}
+/* Footer Styles */
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 2em 1em;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  border-top: 1px solid #0056b3;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+
+footer .social-links {
+  margin: 1em 0;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 0.5em;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #a1c4fd;
+}
+
+footer .contact-info {
+  margin: 1em 0;
+}
+
+footer .contact-info a {
+  color: #a1c4fd;
+}
+
+footer .contact-info a:hover {
+  text-decoration: underline;
+}
+/* Form Control Styles */
+.form-control {
+  margin-bottom: 1em;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875em;
+  margin-top: 0.5em;
+}
+/* Confirmation Message Styles */
+.confirmation-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+

@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Personal Finance Hub - Home
+    link(rel="stylesheet" href="styles.css")
+  body
+    header
+      h1 Personal Finance Hub
+      nav
+        ul
+          li: a(href="#home") Home
+          li: a(href="services.html") Services
+          li: a(href="about.html") About Us
+          li: a(href="contact.html") Contact
+          li: a(href="register" class="btn primary-btn") Register
+          li: a(href="login" class="btn secondary-btn") Login
+
+    main
+      section#home.hero
+        .hero-content
+          h2 Welcome to Your Personal Finance Partner
+          p Manage your finances with ease and confidence. Explore our tools and tips to achieve your financial goals.
+          a(href="services.html" class="btn primary-btn") Explore Services
+
+    footer
+      p &copy; 2024 Personal Finance Hub. All rights reserved.
+    script(src="scripts.js")
